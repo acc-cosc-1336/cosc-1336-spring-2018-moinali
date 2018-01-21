@@ -12,7 +12,7 @@ def get_seconds(seconds):
     return seconds - ((get_hours_since_midnight(seconds)*3600) + (get_minutes(seconds)*60))
 
 def time():
-    seconds= int(input('enter amount of seconds: '))
+    seconds= 3800
     print('Total time eclipse since midnight in hh:mm:ss is ', get_hours_since_midnight(seconds), ':', get_minutes(seconds), ':',get_seconds(seconds) )
     
     
