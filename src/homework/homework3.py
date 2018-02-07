@@ -60,7 +60,8 @@ def main1():
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
     '''
     #write your code here
-    """num = int(input("number of loops? '))
+    '''
+    num = int(input("number of loops? '))
     loops = 0
     total = 0
     while loops < num:
@@ -69,7 +70,8 @@ def main1():
 #print
         list_even_numbers(loops)
           
-        loops = loops + 1"""
+        loops = loops + 1
+        '''
 
 def main2():
     '''
@@ -88,7 +90,8 @@ def main2():
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
     '''
     #write your code here
-   """ keep_going = 'y'
+   '''
+   keep_going = 'y"
     while keep_going == 'y':
         x = randint(1, 100)
         guess = int(input('guess a number: '))
@@ -96,6 +99,7 @@ def main2():
             #return 'you guessed number'
         else:
             #return 'Invalid guess Hint: whole number between 1 to 100' 
-        keep_going = input("enter y if you want to continue: ")"""
+        keep_going = input("enter y if you want to continue: ") 
+        '''
     
 
