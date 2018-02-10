@@ -22,19 +22,20 @@ class Test_Assign4(unittest.TestCase):
         '''
         self.assertNotEqual (1, sample_function(2))
 
-#create two test cases for the factorial function, one test case with a value of 5 and the other with value of 6
-#THE NAME OF THE FUNCTION MUST BEGIN WITH test OTHERWISE THE TestCase suite will not recognize it as a test case.
+    #create two test cases for the factorial function, one test case with a value of 5 and the other with value of 6
+    #THE NAME OF THE FUNCTION MUST BEGIN WITH test OTHERWISE THE TestCase suite will not recognize it as a test case.
     def factorial_when_5_corret_120(self):
-        self.assertNotEqual (120, factorial(5))
+        self.assertEqual (120, factorial(5))
+   
     def factorial_when_6_corret_120(self):
-        self.assertNotEqual (720, factorial(6))
+        self.assertEqual (720, factorial(6))
 
 
 
 
 
 #remove the pound sign at the beginning of the next statement to run tests locally.
-#unittest.Main(verbosity=2)
+#unittest.main(verbosity=2)
 #add the pound sign back before uploading to Github
         
 
