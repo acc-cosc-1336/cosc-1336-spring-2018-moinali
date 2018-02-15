@@ -27,17 +27,17 @@ def main():
         total_credit_hours = 0.0
 
         for class_num in range(1, num_grades+1):
-            print ('For Student', student, ', Class #', class_num, ' enter a grade')
+            print ('For Student', student, ', Class ', class_num, ' enter a grade', end='')
             letter_grade = input(':')
             
             valid = valid_letter_grade(letter_grade)
             while valid == False:
-                print ('Invalid Letter Grade. (A, B, C, D, F, a, b, c, d, f)')
-                letter_grade = input('Enter a valid grade: ')
+                print ('Invalid Letter Grade')
+                letter_grade = input('enter a grade: ')
                 valid = valid_letter_grade(letter_grade)
 
             
-            print ('How many credit hours is Class #', class_num, 'worth?')
+            print ('How many credit hours for Class ', class_num)
             credit_hours = float(input(': '))
             credit_points = float(get_credit_points(letter_grade))
             
@@ -49,5 +49,5 @@ def main():
             
 
         gpa = get_grade_point_average(total_credit_hours, total_grade_points)
-        print ('Student #', student, ' GPA is: ', format(gpa, '.2f'))
+        print ('Student ', student, ' GPA is ', format(gpa, '.2f'))
 main()        
