@@ -9,11 +9,11 @@ class Test_Assign4(unittest.TestCase):
         self.assertEqual(1,1)
     def test_recursive_decimal_binary_basecase(self):
         self.assertEqual('00000000',recursive_decimal_binary(0,7))
-    def test_recursive_decimal_binary_basecase(self):
+    def test_recursive_decimal_binary_w_65(self):
         self.assertEqual('01000001',recursive_decimal_binary(65,7))
-    def test_recursive_decimal_binary_basecase(self):
+    def test_recursive_decimal_binary_w_255(self):
         self.assertEqual('11111111',recursive_decimal_binary(255,7))
-    def test_recursive_decimal_binary_basecase(self):
+    def test_recursive_decimal_binary_w_86(self):
         self.assertEqual('01010110',recursive_decimal_binary(86,7))
 
 
@@ -21,4 +21,4 @@ class Test_Assign4(unittest.TestCase):
 
     #write test cases with arguments 85 and 63 for recursive_decimal_binary function
 
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
