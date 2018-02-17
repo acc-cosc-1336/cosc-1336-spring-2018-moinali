@@ -1,3 +1,5 @@
+from src.assignments.assignment4 import factorial
+
 def main():#void function
     '''
     Create a loop that'll run until the user doesn't type the letter 'y'
@@ -14,7 +16,7 @@ def main():#void function
 
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
     '''
-    from assignment4 import factorial
+    
     keep_going = 'y'
     while keep_going == 'y':
         num = int(input('enter a number to get factorial: '))
