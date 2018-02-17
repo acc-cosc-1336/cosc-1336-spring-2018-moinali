@@ -30,3 +30,41 @@ def list_of_even_numbers(num):
             even_numbers += str(i)+","
     return even_numbers
 
+def main1():
+    '''
+    You will make calls to sum_odd_numbers and list_of_even_numbers functions above.
+    Example:
+    Call list sum_odd_numbers and save its return value to a result variable
+    result = sum_odd_numbers(10)
+    print(result)
+
+    For your assignment:
+
+    Prompt user for a number from keyboard
+    This is the number of times the program will loop and ...
+    In the loop call the sum_odd_numbers(index) with the current value of the loop index and save return value
+    print the value
+    In the loop call the list_even_numbers(index) with the current value of the loop index and save return value
+    print the value
+
+    WHAT IS LOOP INDEX?
+    for i in range(1,5): #i is loop index
+       #other code
+
+    while i < 10: #i is loop index
+       #other code
+
+    TO RUN YOUR PROGRAM IN IDLE SELECT RUN->RUN MODULE OR THE F5 KEY
+    IN THE PYTHON SHELL TYPE main1() to run the code in this function
+
+    DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
+    '''
+    #write your code here
+    loops = int(input("This is the number of times the program will loop... "))
+    for i in range(loops):
+        odds = sum_odd_numbers(i)
+        print(odds)
+        evens = list_of_even_numbers(i)
+        print(evens)
+
+
