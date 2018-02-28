@@ -38,4 +38,4 @@ class TestHomework6(unittest.TestCase):
     def test_get_gc_content_given_60(self):
         self.assertEqual('60.919540', get_gc_content('CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGACTGGGAACCTGCGGGCAGTAGGTGGAAT')) 
  
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
