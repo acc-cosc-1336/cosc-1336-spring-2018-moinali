@@ -11,4 +11,4 @@ class Test_Assign7(unittest.TestCase):
     # bill 23 16 19 22
     def test_sum_list_values_with_bill(self):
         self.assertEqual(80, sum_list_values(['bill' ,23 ,16 ,19 ,22]))
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
