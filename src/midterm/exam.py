@@ -93,7 +93,7 @@ CREATE A TEST CASE IN THE exam_test.py file.
 
 def get_list_min_max(list1):
     list0 = list1[1:]
-    return min(list0), max(list0)
+    return [min(list0), max(list0)]
     
 
 
@@ -120,17 +120,18 @@ Return Value:
 
 def get_list_min_max_file():
     file = open('quiz.dat', 'r')
-    return_list = []
+    tmp_list = []
 
     for line in file:
-        list1 = line.split() 
-        list0 = list1[1:]
-        for i in list0:
-            return min(list0), max(list0)
-##                
-##            return_list.append(min(list1))
-##            return_list.append(max(list1))
+        list1 = line.split()
+        i = 0
+        while i < len(list1):
+            if list1[i].isdigit():
+                list1[i] = int(list1[i])
+            i += 1
 
+        tmp_list += get_list_min_max(list1)
+        
     file.close()
 
-##    return  return_list
+    return get_list_min_max(tmp_list)
