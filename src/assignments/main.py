@@ -1,6 +1,6 @@
 #Write import statements for classes invoice and invoice_item
-from invoice import Invoice
-from invoice_item import InvoiceItem
+from src.assignments.assignment9.invoice import Invoice
+from src.assignments.assignment9.invoice_item import InvoiceItem
 '''
 LOOK AT THE TEST CASES FOR HINTS
 Create an invoice object
