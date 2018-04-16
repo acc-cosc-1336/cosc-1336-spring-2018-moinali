@@ -12,7 +12,7 @@ Player(log).roll_doubles()
 
 
 #call the game log display method below
-GameLog.display_log(log)
+log.display_log()
 
 
 
