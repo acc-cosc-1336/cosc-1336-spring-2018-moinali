@@ -14,7 +14,8 @@ def main():
         quantity = int(input('enter a quantity: '))
         if name not in inv:
             inv[name] = quantity
-        keepgoing = input('enter y to continue: ')
+        else:
+            inv[name] += quantity
     
     file = open('inventory.txt','w')
     inv
